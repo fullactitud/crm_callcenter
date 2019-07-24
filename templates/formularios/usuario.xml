@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<formulario in="s5f878i" out="" de="Caracteristicas del Usuario">
+  <lista de="es un nodo, no es un arreglo">
+    <campos>
+      <campo de="Id" default=""
+			 id="id"
+			 type="text"
+			 class=""
+			 style=""
+			 src="obj" />
+      <campo de="Nick" default=""
+			 id="usuario" type="text"
+			 class="" style=""
+			 src="obj" />
+      <campo de="Nombres" default=""
+			 id="nombres" type="text"
+			 class="" style=""
+			 src="obj" />
+      <campo de="Apellidos" default=""
+			 id="apellidos" type="text"
+			 class="" style=""
+			 src="obj" />
+      <campo de="Contraseña" default=""
+			 id="clave" type="password"
+			 class="" style=""
+			 src="obj" />
+      <campo de="Correo Electrónico" default=""
+			 id="email" type="text"
+			 class="" style=""
+			 src="obj" />
+      <campo de="Estatus" default=""
+			 id="st"
+			 type="select"
+			 class=""
+			 style=""
+			 src="obj" />
+    </campos>
+    <botones>
+      <boton de="Salvar" icon="disk" id="f0u555w_1" script="$('#f0u555w_1').button().click(function(){$.ajax({type:'POST',async:true,url:baseUrl+'/'+index+'?r=edux/df/in2',data:'&amp;op=4&amp;oper=add&amp;idTicket='+$('#id_ticket2').val()+'&amp;fecha='+$('#fecha').val()+'&amp;h='+$('#h').val()+'&amp;de='+$('#de').val(),success:function(txt){alert(txt);location.href=baseUrl+index+'?r=s/agenda/df/coevents';dialogClose($('#div_dlg'));}})});"/>
+    </botones>
+  </lista>
+</formulario>

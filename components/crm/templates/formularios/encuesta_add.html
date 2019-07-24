@@ -1,0 +1,117 @@
+<li class="lisort1" id="__id__">
+  <div style="position:relative; clear:both; margin: 0.5em; width:100%; height: auto;" >
+	<div class="ui-state-default" style="width:100%; height: auto;"> &nbsp; Texto ó pregunta número <b>__id__</b>  </div>
+
+	<div id="lisort1s__id__" style="position:relative;height: auto; display: block;">
+	  <div><br /></div>
+
+
+	  <div class="form-group" style="height: 1.8em;">
+		<label class="control-label col-sm-3" for="antes_requiere___id__"> Antes Requiere </label>
+		<div id="antes_requiere___id__" class="col-sm-9">
+		</div>
+	  </div>
+	  
+	  
+	  <div class="form-group" style="height: 1.8em;">
+		<label class="control-label col-sm-3" for="tipo__id__">
+		  Tipo de campo &nbsp;
+		  <span style="color:#ff8800; cursor:hand; cursor:pointer;" onClick="if( x3help__id__ == 0){$(\'#x3ayuda_tipo__id__\').show();x3help__id__ =1;}else{$(\'#x3ayuda_tipo__id__\').hide();x3help__id__ =0;};"><b>?</b></span>
+		</label>
+		<div class="col-sm-9">
+	      <select id="tipo__id__" name="tipo__id__">
+			<option value="texto"> Texto sin pregunta </option>
+			<option value="textarea"> Introducir texto </option>
+			<option value="select"> Lista desplegable </option>
+			<option value="radio"> Radio </option>
+			<option value="checkbox"> CheckBox </option>
+			<option value="dia"> Fecha </option>
+			<option value="hora"> Hora </option>
+		  </select>	  
+		</div>
+	  </div>
+	  <div id="x3ayuda_tipo__id__" class="alert alert-info" style="clear: both; display: none; height: auto;">
+		  {{.encuesta_add_tipo}}
+	  </div>
+
+	  
+	  <div class="form-group" style="height: 1.8em;">
+		<label class="control-label col-sm-3" for="id__id__"> Identificador &nbsp;
+<span style="color:#ff8800; cursor:hand; cursor:pointer;" onClick="if( x3help__id__ == 0){$(\'#x3ayuda_identificador__id__\').show();x3help__id__ =1;}else{$(\'#x3ayuda_identificador__id__\').hide();x3help__id__ =0;};"><b>?</b></span>
+		</label>
+		<div class="col-sm-9">
+		  <input type="text" name="id__id__" placeholder="Identificador o valor en la base de datos" /> 
+		</div>
+	  </div>
+	  <div id="x3ayuda_identificador__id__" class="alert alert-info" style="height: auto;clear:both; display: none;">
+		  {{.encuesta_add_identificador}}
+	  </div>
+
+	  
+	  <div class="form-group" style="height: 1.8em;">
+		<label class="control-label col-sm-3" for="text__id__"> Pregunta ó texto &nbsp;
+<span style="color:#ff8800; cursor:hand; cursor:pointer;" onClick="if( x3help__id__ == 0){$(\'#x3ayuda_pregunta__id__\').show();x3help__id__ =1;}else{$(\'#x3ayuda_pregunta__id__\').hide();x3help__id__ =0;};"><b>?</b></span>
+		</label>
+		<div class="col-sm-9">
+		  <textarea name="text__id__" placeholder="Texto o Pregunta" defaultValue="" cols="80%"></textarea>
+		</div>
+	  </div>
+	  <div id="x3ayuda_pregunta__id__" class="alert alert-info" style="height: auto;clear:both; display: none;">
+		  {{.encuesta_add_pregunta}}
+	  </div>
+
+	  
+	  <div class="form-group" style="height: 1.8em;">
+		<label class="control-label col-sm-3" for="ir_a___id__">Entrada siguiente Por defecto &nbsp;
+<span style="color:#ff8800; cursor:hand; cursor:pointer;" onClick="if( x3help__id__ == 0){$(\'#x3ayuda_siguiente__id__\').show();x3help__id__ =1;}else{$(\'#x3ayuda_siguiente__id__\').hide();x3help__id__ =0;};"><b>?</b></span>
+		</label>
+		<div class="col-sm-9">
+		  <select id="ir_a___id__" name="ir_a___id__" title="Ir a"></select>
+		</div>
+	  </div>
+	  <div id="x3ayuda_siguiente__id__" class="alert alert-info" style="height: auto;clear:both; display: none;">
+		  {{.encuesta_add_siguiente}}
+	  </div>
+
+	  <div class="form-group" style="height: 1.8em;">
+		<div class="widget">
+		  <button id="addflt0___id__"  onClick="agregarfiltro(\'__id__\');">Agregar Filtro &nbsp;
+
+		  </button>
+		  </div>
+	  </div>
+
+	  <div class="form-group">
+	  	<ul id="filtro___id__" class="filtro___id__"></ul>
+	  </div>
+
+	  
+	  
+	  <div class="form-group" style="height: 1.8em;">
+		<label class="control-label col-sm-3" for="requiere___id__">Filtro</label>
+		<div  id="requiere___id__" class="col-sm-9">
+		  <select id="ir_a___id__" name="ir_a___id__" title="Ir a"></select>
+		</div>
+	  </div>
+	  
+	  
+	  <div class="form-group" style="position:relative;min-height: initial; background-color:#ff2949;">
+		<label class="control-label col-sm-3" for="addop">Opciones &nbsp;
+
+		</label>
+		<div class="col-sm-9" style="height: auto;">
+		  <div class="widget">
+			<button id="addop"  onClick="agregaropcion(\'sortable___id__\',\'__id__\');">Agregar Opción</button>
+		  </div>
+		  <div style="height:auto;">
+	  		<ul id="sortable___id__" class="sortable___id__"></ul>
+		  </div>
+		</div>
+	  </div>
+
+ 
+	</div>
+      <div style="height: 3.0em;"><br /><hr /></div>
+  </div>
+</li>
+

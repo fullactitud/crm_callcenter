@@ -1,0 +1,17 @@
+{"de": "Caracteristicas del Usuario", "in": "", "out": "",
+	"campos": [
+		{"de": "Id", "default": "", "id": "id", "type": "text", "class": "", "style": "", "src": "obj"},
+		{"de": "Nick", "default": "", "id": "usuario", "type": "text", "class": "", "style": "", "src": "obj"},
+		{"de": "Nombres", "default": "", "id": "nombres", "type": "text", "class": "", "style": "", "src": "obj"},
+	    {"de": "Apellidos", "default": "", "id": "apellidos", "type": "text", "class": "", "style": "", "src": "obj"},
+	    {"de": "Contraseña", "default": "", "id": "clave", "type": "password", "class": "", "style": "", "src": "obj"},
+	    {"de": "Correo Electrónico", "default": "", "id": "email", "type": "text", "class": "", "style": "", "src": "obj"},
+	    {"de": "Estatus", "default": "", "id": "st", "type": "select", "class": "", "style": "", "src": "obj"}	
+	],
+	"botones": [
+		{"de": "Salvar", "icon": "disk", "id": "",
+			"script": "$('#f0u555w_1').button().click(function(){$.ajax({type:'POST',async:true,url:baseUrl+'/'+index+'?r=edux/df/in2',data:'&amp;op=4&amp;oper=add&amp;idTicket='+$('#id_ticket2').val()+'&amp;fecha='+$('#fecha').val()+'&amp;h='+$('#h').val()+'&amp;de='+$('#de').val(),success:function(txt){alert(txt);location.href=baseUrl+index+'?r=s/agenda/df/coevents';dialogClose($('#div_dlg'));}})});",
+			"class": "", "style": ""
+		}
+	]
+}

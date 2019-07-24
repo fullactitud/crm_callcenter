@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<document>
+    <autor project="Sistema de Control de calificaciones" package="edux" vertion="1.0" app="" module="edux" descripcion="" copyright="" autor="" autor_email="xfreelance@gmail.com" date="201304"></autor>
+    <preferencias categoria="listado" title="" edit="true" action="" id="" partes="1" height="1" width="920" line-height="1.6" descripcion="Listado de Periodos" category="Listado" thumbnail="_.gif" columna_der="12.0em" buttons="false"></preferencias>
+    <head de="Campos en la cabecera">
+        <camps>
+        </camps>
+        <divs>
+            <div width="50%" type="text" de=""/>
+            <div width="50%" type="button" de="Agregar Periodo" align="right" icon="contact" id="g9r627b" accion="edux/df/"/>
+        </divs>
+    </head>
+    <list title=" " url="" editurl="" cellEdit="false" width="350" autowidth="true" height="auto" sufijodb="" smdb="" db="" model="xEduPeriodo" rowNum="50" sortname="id"  sortorder="asc" actions="false" rownumbers="true" multiselect="false" viewrecords="false" pgbuttons="true" pgtext="true" pginput="false">
+        <parameters>
+            <!-- parameter fieldOut="id_ticket" fieldIn="idTicket" relation="=and" source="request" ></parameter -->
+            <parameter fieldOut="st" relation=">" fieldIn="0" source="" ></parameter>
+        </parameters>
+        <navGrid navigator="true">
+            <options refresh="false" search="false" excel="false" edit="false" del="false" view="false" add="false" pdf="false"></options>
+            <edit height="auto" reloadAfterSubmit="false" ></edit>
+            <add height="auto" caption="Add" reloadAfterSubmit="false" addCaption="Add" closeAfterAdd="true" ></add>
+            <del reloadAfterSubmit="false"></del>
+            <search></search>
+        </navGrid>
+        <campos>
+            <campo src="id" colNames="id" name="id" index="id" width="1" sortable="true" editable="false" align="center" hidden="true" sorttype="text"></campo>
+            <campo src="de" colNames="Nombre" name="de" index="de" width="30" sortable="true" editable="false" align="center" hidden="" type="text" sorttype="text"></campo>
+            <campo src="ini" colNames="Fecha de Inicio" name="ini" index="ini" width="30" sortable="true" editable="false" align="center" hidden="" sorttype="text"></campo>
+            <campo src="fin" colNames="Fecha de Finalización" name="fin" index="fin" width="30" sortable="true" editable="false" align="center" hidden="" sorttype="text"></campo>
+        </campos>
+    </list>
+</document>

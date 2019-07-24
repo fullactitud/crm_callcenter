@@ -1,0 +1,73 @@
+{
+	"de":"Listado de Usuarios",
+	"title":"",
+	"width":"920",
+	"line-height":"1.6",
+	"thumbnail":"_.gif",
+	"columna_der":"12.0em",
+	"buttons":"false",
+	[
+		{
+			"title":" ",
+			"url":"",
+			"editurl":"",
+			"cellEdit":"false",
+			"width":"350",
+			"autowidth":"true",
+			"height":"auto",
+			"sufijodb":"",
+			"smdb":"",
+			"db":"",
+			"model":"xEduPeriodo",
+			"rowNum":"50",
+			"sortname":"id",
+			"sortorder":"asc",
+			"actions":"false",
+			"rownumbers":"true",
+			"multiselect":"false",
+			"viewrecords":"false",
+			"pgbuttons":"true",
+			"pgtext":"true",
+			"pginput":"false",
+			"parameters":[
+				{"fieldOut":"st" "relation":">" "fieldIn":"0" "source":""}
+			],	  
+			"navGrid":{
+				"navigator":"true",
+				"options":{
+					"refresh":"false",
+					"search":"false",
+					"excel":"false",
+					"edit":"false",
+					"del":"false",
+					"view":"false",
+					"add":"false",
+					"pdf":"false"
+				},
+				"edit":{
+					"height":"auto",
+					"reloadAfterSubmit":"false"
+				},
+				"add":{
+					"height":"auto",
+					"caption":"Add",
+					"reloadAfterSubmit":"false",
+					"addCaption":"Add",
+					"closeAfterAdd":"true"
+				},
+				"del":{
+					"reloadAfterSubmit":"false"
+				},
+				"search":""
+			},
+			"campos": [
+				{"de": "Id", "default": "", "id": "id", "type": "text", "class": "", "style": "", "src": "obj"},
+				{"src":"id", "colNames":"id", "name":"id", "index":"id", "width":"1", "sortable":"true", "editable":"false", "align":"center", "hidden":"true", "sorttype":"text"},
+				{"src":"id", "colNames":"id", "name":"id", "index":"id", "width":"1", "sortable":"true", "editable":"false", "align":"center", "hidden":"true", "sorttype":"text"},
+				{"src":"de", "colNames":"Nombre", "name":"de", "index":"de", "width":"30", "sortable":"true", "editable":"false", "align":"center", "hidden":"", "type":"text", "sorttype":"text"},
+				{"src":"ini", "colNames":"Fecha de Inicio", "name":"ini", "index":"ini", "width":"30", "sortable":"true", "editable":"false", "align":"center", "hidden":"", "sorttype":"text"},
+				{"src":"fin", "colNames":"Fecha de Finalización", "name":"fin", "index":"fin", "width":"30", "sortable":"true", "editable":"false", "align":"center", "hidden":"", "sorttype":"text"}
+			]
+		}
+	}
+}

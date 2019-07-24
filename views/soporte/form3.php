@@ -1,0 +1,5 @@
+<?=$regresar;?>
+    <?php
+    echo $data;
+
+?>

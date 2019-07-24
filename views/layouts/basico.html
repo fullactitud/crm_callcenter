@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Sistema para el Manejo de la Relación con los Clientes</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+ <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+ <link rel="shortcut icon" href="static/img/check2.ico" type="image/png" />
+ <link href="static/css/jquery/jquery-ui2/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+ <link href="static/css/jquery/jquery-ui2/jquery-ui.structure.min.css" rel="stylesheet" type="text/css" />
+ <link href="static/css/jquery/jquery-ui2/jquery-ui.theme.min.css" rel="stylesheet" type="text/css" />
+
+
+ <link href="static/css/jqgrid/searchFilter.css" rel="stylesheet" type="text/css" />
+ <link href="static/css/jqgrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
+ <link href="static/css/jqgrid/ui.jqgrid-bootstrap.css" rel="stylesheet" type="text/css" />
+ <link href="static/css/jqgrid/ui.jqgrid-bootstrap-ui.css" rel="stylesheet" type="text/css" />
+ <link href="static/css/jqgrid/ui.multiselect.css" rel="stylesheet" type="text/css" />
+ 
+ 
+ <link href="static/css/go.css" rel="stylesheet" type="text/css" />
+ <script type="text/javascript" src="static/js/jquery/jquery-3.1.1.min.js"></script>
+ <script type="text/javascript" src="static/js/jquery/jquery-ui2/package.json"></script>
+ <script type="text/javascript" src="static/js/jquery/jquery-ui2/jquery-ui.min.js"></script>
+
+ <script type="text/javascript" src="static/js/jqgrid/i18n/grid.locale-es.js"></script>
+ <script type="text/javascript" src="static/js/jqgrid/jquery.jqGrid.min.js"></script>
+ 
+
+  
+ 
+ {{.HtmlHead}}
+</head>
+<body>
+  {{.Header}}
+  {{.SideBar}}
+  <div id="container" class="container">{{.LayoutContent}}</div>
+  {{.Footer}}
+	  
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    {{.Scripts}}
+	  <script>
+$(function() {
+    var menuVisible = false;
+    var containerVisible = true;
+    $('#menuBtn').click(function() {
+        if (menuVisible) {
+$('#myMenu').css({'display':'none'});
+$('#container').css({'display':'block'});
+            menuVisible = false;
+            containerVisible = true;
+      return;
+    }
+$('#myMenu').css({'display':'block'});
+$('#container').css({'display':'none'});
+menuVisible = true;
+containerVisible = false;
+  });
+  $('#myMenu').click(function() {
+$(this).css({'display':'none'});
+$('#container').css({'display':'block'});
+menuVisible = false;
+containerVisible = true;
+  });
+});
+  </script>
+</body>
+</html>
